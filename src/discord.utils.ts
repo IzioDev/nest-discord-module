@@ -10,3 +10,8 @@ export const getPreferedProviderName = (
   options && options.overridedProviderName
     ? options.overridedProviderName
     : 'discordBot';
+
+export const getPreferedTimeoutDuration = (
+  options?: DiscordModuleRegisterOptions,
+) =>
+  options && options.timeoutDuration ? options.timeoutDuration * 1000 : 30000;

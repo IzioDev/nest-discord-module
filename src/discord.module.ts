@@ -2,6 +2,7 @@ import { Module, DynamicModule } from '@nestjs/common';
 import { Client } from 'discord.js';
 import { createDiscordProviders } from './discord.providers';
 import { DiscordModuleRegisterOptions } from './interaces/discord-module-register-options';
+import { getPreferedTimeoutDuration } from './discord.utils';
 import {
   safeGetControllersFromOptions,
   getPreferedProviderName,
@@ -20,9 +21,16 @@ export class DiscordModule {
     }
 
     return new Promise((res, rej) => {
+      const preferedTimeoutDuration = getPreferedTimeoutDuration(options);
+      const timeout = setTimeout(
+        () => rej('Connection cannot be made, is discord API down?'),
+        preferedTimeoutDuration,
+      );
+
       const client = new Client();
 
       client.on('ready', () => {
+        clearTimeout(timeout);
         if (options && options.discrodListeners) {
           // Bind listeners.
           options.discrodListeners.map((discordListener) => {
@@ -49,7 +57,9 @@ export class DiscordModule {
         throw new Error(error.message + '. Is the token good?');
       });
 
-      client.login(clientToken);
+      client.login(clientToken).catch((error) => {
+        throw new Error(error.message + '. Are the rate limits good?');
+      });
     });
   }
 }

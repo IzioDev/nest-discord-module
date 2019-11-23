@@ -22,4 +22,11 @@ export interface DiscordModuleRegisterOptions {
    * Change the Injector name. Default: `discordBot`
    */
   overridedProviderName?: string;
+  /**
+   * @optional
+   * Change the duration (in seconds) within the module say stop
+   * (prevent app to be blocked when discord API is down)
+   * default 30 seconds
+   */
+  timeoutDuration?: number;
 }
