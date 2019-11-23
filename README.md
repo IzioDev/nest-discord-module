@@ -1,4 +1,4 @@
-# nest-discord-bot
+# nest-discord-module
 
 ## Description
 
