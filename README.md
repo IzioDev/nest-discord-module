@@ -1,8 +1,14 @@
 # nest-discord-module
 
+[![npm version](https://badge.fury.io/js/nest-discord-module.svg)](https://badge.fury.io/js/nest-discord-module)
+
 ## Description
 
 Allow to integrate a discord bot inside a NestJs app. This package uses custom module loader.
+
+## Installation
+
+`npm install --save nest-discord-module`
 
 ## Features
 
