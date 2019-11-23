@@ -10,6 +10,7 @@
     "publish:npm": "npm publish --access public"
   },
   "devDependencies": {
+    "prettier": "^1.19.1",
     "typescript": "3.7.2"
   },
   "dependencies": {

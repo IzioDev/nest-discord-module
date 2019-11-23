@@ -1,7 +1,7 @@
-import { Type } from "@nestjs/common";
-import { DiscordClientEvent } from "../types/client-event";
+import { Type } from '@nestjs/common';
+import { DiscordClientEvent } from '../types/client-event';
 
-export interface IDiscordListener {
+export interface DiscordListener {
   eventName: DiscordClientEvent;
   handler: () => void;
 }
@@ -16,7 +16,7 @@ export interface DiscordModuleRegisterOptions {
    * @optional
    * A list of event to bind
    */
-  discrodListeners?: IDiscordListener[];
+  discrodListeners?: DiscordListener[];
   /**
    * @optional
    * Change the Injector name. Default: `discordBot`
