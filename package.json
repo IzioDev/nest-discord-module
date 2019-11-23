@@ -1,6 +1,6 @@
 {
   "name": "nest-discord-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A nest discord module that allows to integrate Discord bots within a NestJs app",
   "author": "Romain Billot",
   "license": "MIT",
@@ -16,6 +16,8 @@
     "@nestjs/common": "6.10.1",
     "discord.js": "^11.5.1"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/izio38/nest-discord-module"
