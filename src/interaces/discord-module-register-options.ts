@@ -16,7 +16,7 @@ export interface DiscordModuleRegisterOptions {
    * @optional
    * A list of event to bind
    */
-  discrodListeners?: DiscordListener[];
+  discordListeners?: DiscordListener[];
   /**
    * @optional
    * Change the Injector name. Default: `discordBot`

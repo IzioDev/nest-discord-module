@@ -31,7 +31,7 @@ Allow to integrate a discord bot inside a NestJs app. This package uses custom m
         // An optional list of controllers
         controllers: [DiscordBotController],
         // An optional list of listeners
-        discrodListeners: [DiscordListenerExample],
+        discordListeners: [DiscordListenerExample],
         // Allow to override the providerName
         overridedProviderName: "mySuperNewName",
       }

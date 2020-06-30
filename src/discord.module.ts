@@ -31,9 +31,9 @@ export class DiscordModule {
 
       client.on('ready', () => {
         clearTimeout(timeout);
-        if (options && options.discrodListeners) {
+        if (options && options.discordListeners) {
           // Bind listeners.
-          options.discrodListeners.map((discordListener) => {
+          options.discordListeners.map((discordListener) => {
             const { eventName, handler } = discordListener;
 
             client.on(eventName, handler);
