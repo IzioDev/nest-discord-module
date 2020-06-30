@@ -6,11 +6,12 @@
   "license": "MIT",
   "url": "https://github.com/izio38/nest-discord-module#readme",
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "build": "rimraf dist && tsc -p tsconfig.json",
     "publish:npm": "npm publish --access public"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
     "typescript": "3.7.2"
   },
   "dependencies": {
