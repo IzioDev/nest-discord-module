@@ -3,7 +3,7 @@ import { DiscordClientEvent } from '../types/client-event';
 
 export interface DiscordListener {
   eventName: DiscordClientEvent;
-  handler: () => void;
+  handler: (...args: any) => void;
 }
 
 export interface DiscordModuleRegisterOptions {
