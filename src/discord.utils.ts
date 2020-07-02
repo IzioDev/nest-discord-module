@@ -1,4 +1,4 @@
-import { DiscordModuleRegisterOptions } from './interaces/discord-module-register-options';
+import { DiscordModuleRegisterOptions } from './interfaces/discord-module-register-options';
 
 export const safeGetControllersFromOptions = (
   options?: DiscordModuleRegisterOptions,

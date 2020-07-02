@@ -3,6 +3,12 @@
   "version": "0.0.3",
   "description": "A nest discord module that allows to integrate Discord bots within a NestJs app",
   "author": "Romain Billot",
+  "keywords": [
+    "nestjs",
+    "discord",
+    "module",
+    "nest"
+  ],
   "license": "MIT",
   "url": "https://github.com/izio38/nest-discord-module#readme",
   "scripts": {
@@ -15,8 +21,8 @@
     "typescript": "3.7.2"
   },
   "dependencies": {
-    "@nestjs/common": "6.10.1",
-    "discord.js": "^11.5.1"
+    "@nestjs/common": "^7.3.1",
+    "discord.js": "^12.2.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

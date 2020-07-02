@@ -70,7 +70,7 @@ export class DiscordBotController {
 
 ```ts
 export const DiscordListenerExample = {
-  eventName: "message"
+  eventName: "message",
   handler = (message) => {
     message.reply("Stop spaming here!");
   }

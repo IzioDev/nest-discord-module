@@ -1,9 +1,9 @@
 import { Type } from '@nestjs/common';
-import { DiscordClientEvent } from '../types/client-event';
+import { ClientEvents } from 'discord.js';
 
 export interface DiscordListener {
-  eventName: DiscordClientEvent;
-  handler: () => void;
+  eventName: keyof ClientEvents;
+  handler: (...args: any) => void;
 }
 
 export interface DiscordModuleRegisterOptions {

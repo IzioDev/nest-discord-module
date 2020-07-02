@@ -1,7 +1,7 @@
 import { Module, DynamicModule } from '@nestjs/common';
 import { Client } from 'discord.js';
 import { createDiscordProviders } from './discord.providers';
-import { DiscordModuleRegisterOptions } from './interaces/discord-module-register-options';
+import { DiscordModuleRegisterOptions } from './interfaces/discord-module-register-options';
 import { getPreferedTimeoutDuration } from './discord.utils';
 import {
   safeGetControllersFromOptions,
