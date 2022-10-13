@@ -1,5 +1,7 @@
 # nest-discord-module
 
+:warning: Not maintained anymore: use [this package](https://www.npmjs.com/package/@discord-nestjs/core) instead.
+
 [![npm version](https://badge.fury.io/js/nest-discord-module.svg)](https://badge.fury.io/js/nest-discord-module)
 
 ## Description
